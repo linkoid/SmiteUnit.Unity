@@ -15,8 +15,18 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionPrefix>0.1.0-alpha</VersionPrefix>
     <Authors>linkoid</Authors>
+    <Description>Adds extensions to help with using SmiteUnit in Unity</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/linkoid/SmiteUnit.Unity</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="UnityEngine.Modules" IncludeAssets="compile" PrivateAssets="all">
