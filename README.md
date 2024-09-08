@@ -5,6 +5,7 @@ See [SmiteUnit](https://github.com/linkoid/SmiteUnit)
 ## Examples
 
 ```cs
+using System.Threading.Tasks;
 using UnityEngine;
 using SmiteUnit.Framework;
 using SmiteUnit.Unity;
