@@ -1,7 +1,9 @@
 # SmiteUnit.Unity
-Adds extensions to help with using SmiteUnit in Unity
+Adds extensions to help with using SmiteUnit in Unity.
 
-See [SmiteUnit](https://github.com/linkoid/SmiteUnit)
+Available on [NuGet](https://www.nuget.org/packages/Linkoid.SmiteUnit.Unity/).
+
+See [SmiteUnit](https://github.com/linkoid/SmiteUnit) for more info.
 
 ## Examples
 
