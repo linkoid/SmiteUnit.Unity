@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;https://nuget.bepinex.dev/v3/index.json</RestoreSources>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Linkoid.$(AssemblyName)</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <VersionPrefix>0.1.0-alpha</VersionPrefix>
+    <Authors>linkoid</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnityEngine.Modules" IncludeAssets="compile" PrivateAssets="all">
+      <Version Condition="'$(TargetFramework)' == 'net35'">5.0.0</Version>
+      <Version Condition="'$(TargetFramework)' == 'netstandard2.0'">2018.1.0</Version>
+      <Version Condition="'$(TargetFramework)' == 'netstandard2.1'">2021.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="AsyncBridge" Version="0.3.1" Condition="'$(TargetFramework)' == 'net35'" />
+  </ItemGroup>
+
+</Project>
